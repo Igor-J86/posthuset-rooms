@@ -13,17 +13,19 @@ const Room: React.FC<RoomProps> = ({
   <mesh
     position={coordinates}
     onClick={onClick}
-    onPointerOver={(e) => (
-      e.object instanceof Mesh && e.object.material.color.set(selected ? colors.selected : colors.default)
-    )}
-    onPointerLeave={(e) => (
-      e.object instanceof Mesh && e.object.material.color.set(selected ? colors.selected : colors.default)
-   )}
+    onPointerOver={(e) =>
+      e.object instanceof Mesh &&
+      e.object.material.color.set(selected ? colors.selected : colors.default)
+    }
+    onPointerLeave={(e) =>
+      e.object instanceof Mesh &&
+      e.object.material.color.set(selected ? colors.selected : colors.default)
+    }
   >
     <boxGeometry args={dimensions} />
     <meshStandardMaterial color={selected ? colors.selected : colors.default} />
     {/* Add room number */}
-    <Text position={[0, 0, 0.11]} fontSize={0.5}>
+    <Text position={[0, 0, 0.12]} fontSize={0.5} color={'#111111'} scale={1.5}>
       {name}
     </Text>
   </mesh>
