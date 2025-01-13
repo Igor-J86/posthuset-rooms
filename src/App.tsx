@@ -6,7 +6,7 @@ import RoomDetails from "./components/roomDetails";
 
 function App() {
   const [selectedRoom, setSelectedRoom] = useState<string>("");
-  const [selectedFloor, setSelectedFloor] = useState<number>(19);
+  const [selectedFloor, setSelectedFloor] = useState<number>(15);
 
   const handleRoomInput = (e: React.FormEvent<HTMLInputElement>) => {
     setSelectedRoom(e.currentTarget.value);
