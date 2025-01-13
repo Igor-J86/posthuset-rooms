@@ -783,7 +783,7 @@ export const floorData = {
 };
 
 export const colors = {
-  default: "skyblue",
+  default: "#ffffff",
   selected: "lightgreen",
-  gray: "stealgray"
+  gray: "#f4f4f4"
 };

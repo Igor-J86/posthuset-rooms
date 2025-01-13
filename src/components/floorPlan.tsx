@@ -77,7 +77,7 @@ const FloorPlan = ({
       className="canvas"
     >
       <ambientLight intensity={0.5} />
-      <directionalLight position={[5, 5, 10]} />
+      <directionalLight position={[0, 5, 10]} />
       <OrbitControls
         minAzimuthAngle={0} // Prevent rotation to the left (sideways)
         maxAzimuthAngle={0} // Prevent rotation to the right (sideways)
