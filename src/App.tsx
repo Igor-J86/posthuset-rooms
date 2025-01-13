@@ -17,6 +17,14 @@ function App() {
     }
   };
 
+  const roomDescription = () => {
+    const getFloor = floorData.floors.filter((floor) => floor.id === selectedFloor)
+    if (!getFloor) return ''
+    const roomDescription = getFloor[0].rooms.filter((room) => room.name === selectedRoom)
+    if (!roomDescription) return ''
+    return roomDescription[0].description
+  }
+
   return (
     <div className="main-layout">
       <FloorPlan
@@ -33,12 +41,13 @@ function App() {
           className="form__control maxw20r mb0"
           onInput={(e) => handleRoomInput(e)}
           id="roomInput"
+          value={selectedRoom && selectedRoom}
           autoFocus
         />
       </div>
       {selectedRoom && (
         <RoomDetails
-          room={selectedRoom}
+          room={roomDescription()}
         />
       )}
     </div>

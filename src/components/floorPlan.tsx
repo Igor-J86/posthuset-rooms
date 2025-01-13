@@ -1,5 +1,5 @@
 import { Canvas } from "@react-three/fiber";
-import { OrbitControls, useTexture } from "@react-three/drei";
+import { OrbitControls } from "@react-three/drei";
 import type { Vector3 } from "@react-three/fiber";
 import Room from "./room";
 import { colors } from "../utils/globals";
@@ -26,7 +26,7 @@ export type FloorPlanType = {
 
 const FloorBase = () => {
   // Load texture
-  const texture = useTexture("./15etg-test.png");
+  //const texture = useTexture("./15etg-test.png");
 
   return (
     <>
@@ -74,23 +74,16 @@ const FloorPlan = ({
   return (
     <>
       <Canvas
-        camera={{ position: [1, -5, 20] }}
+        camera={{ position: [1, -7, 22] }}
         className="canvas"
-        style={{
-          maxWidth: "1440px",
-          width: "100%",
-          height: "550px",
-          borderRadius: "4px",
-          backgroundColor: "#cfcfcf"
-        }}
       >
         <ambientLight intensity={0.5} />
         <directionalLight position={[5, 5, 10]} />
         <OrbitControls
           minAzimuthAngle={0} // Prevent rotation to the left (sideways)
           maxAzimuthAngle={0} // Prevent rotation to the right (sideways)
-          maxPolarAngle={2.8} // Allow vertical tilting (up/down) only to 90 degrees
-          minPolarAngle={0.2}
+          maxPolarAngle={2.5} // Allow vertical tilting (up/down) only to 90 degrees
+          minPolarAngle={1}
           target={[0,1,0]}
           enablePan
         />
