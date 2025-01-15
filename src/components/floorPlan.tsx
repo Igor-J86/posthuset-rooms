@@ -1,28 +1,8 @@
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
-import type { Vector3 } from "@react-three/fiber";
 import Room from "./room";
 import { colors } from "../utils/globals";
-
-export type RoomProps = {
-  id: number;
-  name: string;
-  coordinates: Vector3;
-  dimensions: [];
-  onClick?: () => void;
-  selected: boolean;
-  description?: string;
-};
-
-type Floor = {
-  id: number;
-  name: string;
-  rooms: RoomProps[];
-};
-
-export type FloorPlanType = {
-  floors: Floor[];
-};
+import type { FloorPlanType, RoomProps, Floor } from "../utils/types";
 
 const FloorBase = () => {
   // Load texture
@@ -95,8 +75,8 @@ const FloorPlan = ({
                 <Room
                   key={room.id}
                   {...room}
-                  selected={selectedRoom.length >= 4 && room.name.includes(selectedRoom)}
-                  onClick={() => onRoomClick(room.name)}
+                  selected={selectedRoom.length >= 4 && room.number.includes(selectedRoom)}
+                  onClick={() => onRoomClick(room.number)}
                 />
               ))}
             </group>

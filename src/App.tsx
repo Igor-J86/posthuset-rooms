@@ -1,8 +1,9 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { floorData } from "./utils/globals";
 import FloorPlan from "./components/floorPlan";
-import type { FloorPlanType } from "./components/floorPlan";
+import type { FloorPlanType } from "./utils/types";
 import RoomDetails from "./components/roomDetails";
+import { loadLocal, saveLocal } from "./utils/helpers";
 
 function App() {
   const [selectedRoom, setSelectedRoom] = useState<string>("");
@@ -12,8 +13,7 @@ function App() {
     setSelectedRoom(e.currentTarget.value);
     if (e.currentTarget.value.length === 2) {
       setSelectedFloor(+e.currentTarget.value);
-    } else if (e.currentTarget.value === "") {
-      setSelectedFloor(15);
+      saveLocal("posthuset-floor", e.currentTarget.value)
     }
   };
 
@@ -23,11 +23,18 @@ function App() {
     );
     if (!getFloor[0]) return "";
     const roomDescription = getFloor[0].rooms.filter(
-      (room) => room.name === selectedRoom
+      (room) => room.number === selectedRoom
     );
     if (!roomDescription[0]) return "";
     return roomDescription[0].description;
   };
+
+  useEffect(() => {
+    const savedFloor = loadLocal("posthuset-floor")
+    if(savedFloor) {
+      setSelectedFloor(+savedFloor)
+    }
+  },[])
 
   return (
     <div className="main-layout">
@@ -40,7 +47,10 @@ function App() {
       <h2>Posthuset rooms</h2>
       <div className="flex gam">
         {floorData.floors.map((floor) => (
-          <button disabled={floor.id === selectedFloor} onClick={() => setSelectedFloor(floor.id)}>
+          <button key={floor.id} disabled={floor.id === selectedFloor} onClick={() => {
+            setSelectedFloor(floor.id)
+            saveLocal("posthuset-floor", floor.id.toString())
+          }}>
             {floor.name}
           </button>
         ))}

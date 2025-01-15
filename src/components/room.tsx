@@ -1,10 +1,10 @@
 import { Mesh } from "three";
 import { Text } from "@react-three/drei";
-import type { RoomProps } from "./floorPlan";
+import type { RoomProps } from "../utils/types";
 import { colors } from "../utils/globals";
 
 const Room: React.FC<RoomProps> = ({
-  name,
+  number,
   coordinates,
   dimensions,
   onClick,
@@ -26,7 +26,7 @@ const Room: React.FC<RoomProps> = ({
     <meshStandardMaterial color={selected ? colors.selected : colors.default} />
     {/* Add room number */}
     <Text position={[0, 0, 0.12]} fontSize={0.5} color={'#111111'} scale={1.5}>
-      {name}
+      {number}
     </Text>
   </mesh>
 );
