@@ -2,7 +2,7 @@ import { colors } from "../utils/globals"
 
 const FloorBase = () => {
   // Load texture
-  //const texture = useTexture("./19etg-test2.jpg");
+  //const texture = useTexture("./19etg-test2.jpg")
 
   return (
     <>

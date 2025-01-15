@@ -9,14 +9,14 @@ export type RoomProps = {
   onClick?: () => void
   selected: boolean
   description?: string
-};
+}
 
 export type Floor = {
   id: number
   name: string
   rooms: RoomProps[]
-};
+}
 
 export type FloorPlanType = {
   floors: Floor[]
-};
+}
