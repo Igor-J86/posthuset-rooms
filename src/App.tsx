@@ -3,7 +3,7 @@ import { floorData } from "./utils/globals"
 import FloorPlan from "./components/floorPlan"
 import type { FloorPlanType } from "./utils/types"
 import RoomDetails from "./components/roomDetails"
-import { loadLocal, saveLocal } from "./utils/helpers"
+import { loadLocal, saveLocal, setQueryParam } from "./utils/helpers"
 
 function App() {
   const [selectedRoom, setSelectedRoom] = useState<string>("")
@@ -16,6 +16,10 @@ function App() {
     if (e.currentTarget.value.length === 2) {
       setSelectedFloor(+e.currentTarget.value)
       saveLocal("posthuset-floor", e.currentTarget.value)
+      
+    }
+    if (e.currentTarget.value.length >= 2) {
+      setQueryParam("room",e.currentTarget.value)
     }
   }
 
@@ -47,7 +51,10 @@ function App() {
     <div className="main-layout">
       <FloorPlan
         floorPlan={floorData as FloorPlanType}
-        onRoomClick={(room) => setSelectedRoom(room)}
+        onRoomClick={(room) => {
+          setSelectedRoom(room)
+          setQueryParam("room",room)
+        }}
         selectedFloor={selectedFloor}
         selectedRoom={selectedRoom}
       />
