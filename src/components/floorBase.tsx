@@ -1,4 +1,5 @@
 import { colors } from "../utils/globals"
+import { Text } from "@react-three/drei"
 
 const FloorBase = () => {
   // Load texture
@@ -11,6 +12,11 @@ const FloorBase = () => {
         <meshStandardMaterial map={texture} color={colors.default} />
       </mesh> */}
       {/* Left part */}
+      <mesh rotation={[0, 0, 0]} position={[0, 18, -0.6]}>
+        <Text position={[0, 0, 0.22]} fontSize={0.6} color={"#646464"} scale={1.5}>
+          Plaza Hotel ⬆️ 
+        </Text>
+      </mesh>
       <mesh rotation={[0, 0, 0]} position={[-21.8, 2.6, -0.6]}>
         {/* Plane geometry for the floor */}
         <boxGeometry args={[29, 25, 0.4]} />

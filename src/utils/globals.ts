@@ -180,6 +180,14 @@ export const floorData = {
           dimensions: [8.8, 3.4, 0.2],
           description: ''
         },
+        {
+          id: 23,
+          number: "",
+          name: "Kaffesonen",
+          coordinates: [18.7, -6.8, -0.38],
+          dimensions: [19.4, 6, 0.2],
+          description: ''
+        },
       ],
     },
     {
@@ -362,6 +370,14 @@ export const floorData = {
           dimensions: [8.8, 3.4, 0.2],
           description: ''
         },
+        {
+          id: 24,
+          number: "",
+          name: "Kaffesonen",
+          coordinates: [18.7, -6.8, -0.38],
+          dimensions: [19.4, 6, 0.2],
+          description: ''
+        },
       ],
     },
     {
@@ -380,8 +396,8 @@ export const floorData = {
           id: 2,
           number: "1702",
           name: "Stockholm",
-          coordinates: [4.2, -6.7, -0.38],
-          dimensions: [9.2, 6.2, 0.2],
+          coordinates: [4.25, -6.8, -0.38],
+          dimensions: [9.2, 6, 0.2],
           description: ''
         },
         {
@@ -542,6 +558,14 @@ export const floorData = {
           name: "",
           coordinates: [33, 9, -0.38],
           dimensions: [8.8, 3.4, 0.2],
+          description: ''
+        },
+        {
+          id: 24,
+          number: "",
+          name: "Kaffesonen",
+          coordinates: [18.7, -6.8, -0.38],
+          dimensions: [19.4, 6, 0.2],
           description: ''
         },
       ],
@@ -708,6 +732,14 @@ export const floorData = {
           name: "",
           coordinates: [33, 9, -0.38],
           dimensions: [8.8, 3.4, 0.2],
+          description: ''
+        },
+        {
+          id: 23,
+          number: "",
+          name: "Kaffesonen",
+          coordinates: [18.7, -6.8, -0.38],
+          dimensions: [19.4, 6, 0.2],
           description: ''
         },
       ],
@@ -890,6 +922,14 @@ export const floorData = {
           name: "",
           coordinates: [33, 9, -0.38],
           dimensions: [8.8, 3.4, 0.2],
+          description: ''
+        },
+        {
+          id: 23,
+          number: "",
+          name: "Kaffesonen",
+          coordinates: [18.7, -6.8, -0.38],
+          dimensions: [19.4, 6, 0.2],
           description: ''
         },
       ],
