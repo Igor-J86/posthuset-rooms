@@ -190,16 +190,16 @@ export const floorData = {
           id: 1,
           number: "1601a",
           name: "",
-          coordinates: [35.9, -2.9, -0.38],
-          dimensions: [3, 1.7, 0.2],
+          coordinates: [36, -2.9, -0.38],
+          dimensions: [2.8, 1.7, 0.2],
           description: ''
         },
         {
           id: 2,
           number: "1601b",
           name: "",
-          coordinates: [35.9, -4.7, -0.38],
-          dimensions: [3, 1.7, 0.2],
+          coordinates: [36, -4.7, -0.38],
+          dimensions: [2.8, 1.7, 0.2],
           description: ''
         },
         {
@@ -368,6 +368,14 @@ export const floorData = {
       id: 17,
       name: "17. floor",
       rooms: [
+        {
+          id: 1,
+          number: "Fullservice",
+          name: "",
+          coordinates: [36, -3.8, -0.38],
+          dimensions: [2.8, 3.5, 0.2],
+          description: ''
+        },
         {
           id: 2,
           number: "1702",
