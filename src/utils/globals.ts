@@ -887,10 +887,10 @@ export const floorData = {
       ],
     },
   ],
-};
+}
 
 export const colors = {
   default: "#ffffff",
   selected: "lightgreen",
   gray: "#f4f4f4"
-};
+}

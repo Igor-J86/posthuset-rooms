@@ -1,7 +1,7 @@
-import { Mesh } from "three";
-import { Text } from "@react-three/drei";
-import type { RoomProps } from "../utils/types";
-import { colors } from "../utils/globals";
+import { Mesh } from "three"
+import { Text } from "@react-three/drei"
+import type { RoomProps } from "../utils/types"
+import { colors } from "../utils/globals"
 
 const Room: React.FC<RoomProps> = ({
   number,
@@ -29,6 +29,6 @@ const Room: React.FC<RoomProps> = ({
       {number}
     </Text>
   </mesh>
-);
+)
 
-export default Room;
+export default Room
