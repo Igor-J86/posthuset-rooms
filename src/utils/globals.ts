@@ -370,8 +370,8 @@ export const floorData = {
       rooms: [
         {
           id: 1,
-          number: "Fullservice",
-          name: "",
+          number: "",
+          name: "Fullservice",
           coordinates: [36, -3.8, -0.38],
           dimensions: [2.8, 3.5, 0.2],
           description: ''

@@ -30,7 +30,7 @@ const Room: React.FC<RoomProps> = ({
       {number}
     </Text>
     {name &&
-      <Text position={[0, -0.3, 0.12]} fontSize={0.2} color={'#111111'} scale={1.5}>
+      <Text position={[0, number ? -0.3 : 0, 0.12]} fontSize={0.2} color={'#111111'} scale={1.5}>
         {name}
       </Text>
     }
