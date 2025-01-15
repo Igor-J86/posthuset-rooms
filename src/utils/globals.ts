@@ -71,7 +71,7 @@ export const floorData = {
         {
           id: 9,
           number: "1508",
-          name: "",
+          name: "Servicerom",
           coordinates: [-15.2, -0.2, -0.38],
           dimensions: [3.2, 3.2, 0.2],
           description: ''
@@ -261,7 +261,7 @@ export const floorData = {
         {
           id: 10,
           number: "1608",
-          name: "",
+          name: "Servicerom",
           coordinates: [-15.2, -0.2, -0.38],
           dimensions: [3.2, 3.2, 0.2],
           description: ''
@@ -459,7 +459,7 @@ export const floorData = {
         {
           id: 14,
           number: "1713",
-          name: "",
+          name: "Servicerom",
           coordinates: [-20.77, 5.8, -0.38],
           dimensions: [2.92, 2.8, 0.2],
           description: ''
@@ -601,7 +601,7 @@ export const floorData = {
         {
           id: 9,
           number: "1808",
-          name: "",
+          name: "Servicerom",
           coordinates: [-15.2, -0.2, -0.38],
           dimensions: [3.2, 3.2, 0.2],
           description: ''
@@ -775,7 +775,7 @@ export const floorData = {
         {
           id: 9,
           number: "1908",
-          name: "",
+          name: "Servicerom",
           coordinates: [-15.2, -0.2, -0.38],
           dimensions: [3.2, 3.2, 0.2],
           description: ''
