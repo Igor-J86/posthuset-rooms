@@ -38,7 +38,8 @@ function App() {
     } 
     if (searchTerm) {
       setSelectedFloor(+searchTerm.substring(0,2))
-      setSelectedRoom(searchTerm as string)
+      setSelectedRoom(searchTerm)
+      saveLocal("posthuset-floor", searchTerm.substring(0,2))
     }
   },[searchTerm])
 
