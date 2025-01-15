@@ -1,33 +1,33 @@
-import { useState, useEffect } from "react";
-import { floorData } from "./utils/globals";
-import FloorPlan from "./components/floorPlan";
-import type { FloorPlanType } from "./utils/types";
-import RoomDetails from "./components/roomDetails";
-import { loadLocal, saveLocal } from "./utils/helpers";
+import { useState, useEffect } from "react"
+import { floorData } from "./utils/globals"
+import FloorPlan from "./components/floorPlan"
+import type { FloorPlanType } from "./utils/types"
+import RoomDetails from "./components/roomDetails"
+import { loadLocal, saveLocal } from "./utils/helpers"
 
 function App() {
-  const [selectedRoom, setSelectedRoom] = useState<string>("");
-  const [selectedFloor, setSelectedFloor] = useState<number>(15);
+  const [selectedRoom, setSelectedRoom] = useState<string>("")
+  const [selectedFloor, setSelectedFloor] = useState<number>(15)
 
   const handleRoomInput = (e: React.FormEvent<HTMLInputElement>) => {
-    setSelectedRoom(e.currentTarget.value);
+    setSelectedRoom(e.currentTarget.value)
     if (e.currentTarget.value.length === 2) {
-      setSelectedFloor(+e.currentTarget.value);
+      setSelectedFloor(+e.currentTarget.value)
       saveLocal("posthuset-floor", e.currentTarget.value)
     }
-  };
+  }
 
   const roomDescription = () => {
     const getFloor = floorData.floors.filter(
       (floor) => floor.id === selectedFloor
-    );
-    if (!getFloor[0]) return "";
+    )
+    if (!getFloor[0]) return ""
     const roomDescription = getFloor[0].rooms.filter(
       (room) => room.number === selectedRoom
-    );
-    if (!roomDescription[0]) return "";
-    return roomDescription[0].description;
-  };
+    )
+    if (!roomDescription[0]) return ""
+    return roomDescription[0].description
+  }
 
   useEffect(() => {
     const savedFloor = loadLocal("posthuset-floor")
@@ -69,7 +69,7 @@ function App() {
       </div>
       {selectedRoom && <RoomDetails room={roomDescription()} />}
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
