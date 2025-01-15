@@ -23,9 +23,8 @@ const Room: React.FC<RoomProps> = ({
       e.object.material.color.set(selected ? colors.selected : colors.default)
     }
   >
-    <boxGeometry args={dimensions} />
     <meshStandardMaterial color={selected ? colors.selected : colors.default} />
-    {/* Add room number */}
+    <boxGeometry args={dimensions} />
     <Text position={[0, 0.2, 0.12]} fontSize={0.3} color={'#111111'} scale={1.5}>
       {number}
     </Text>

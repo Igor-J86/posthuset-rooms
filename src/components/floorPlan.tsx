@@ -23,9 +23,9 @@ const FloorPlan = ({
       <ambientLight intensity={0.5} />
       <directionalLight position={[0, 5, 10]} />
       <OrbitControls
-        minAzimuthAngle={0} // Prevent rotation to the left (sideways)
-        maxAzimuthAngle={0} // Prevent rotation to the right (sideways)
-        maxPolarAngle={2.5} // Allow vertical tilting (up/down) only to 90 degrees
+        minAzimuthAngle={0}
+        maxAzimuthAngle={0}
+        maxPolarAngle={2.5}
         minPolarAngle={1}
         target={[0,1,0]}
         enablePan
