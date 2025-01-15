@@ -8,6 +8,8 @@ import { loadLocal, saveLocal } from "./utils/helpers"
 function App() {
   const [selectedRoom, setSelectedRoom] = useState<string>("")
   const [selectedFloor, setSelectedFloor] = useState<number>(15)
+  const searchParams = new URLSearchParams(location.search);
+  const searchTerm = searchParams.get("room");
 
   const handleRoomInput = (e: React.FormEvent<HTMLInputElement>) => {
     setSelectedRoom(e.currentTarget.value)
@@ -33,8 +35,12 @@ function App() {
     const savedFloor = loadLocal("posthuset-floor")
     if(savedFloor) {
       setSelectedFloor(+savedFloor)
+    } 
+    if (searchTerm) {
+      setSelectedFloor(+searchTerm.substring(0,2))
+      setSelectedRoom(searchTerm as string)
     }
-  },[])
+  },[searchTerm])
 
   return (
     <div className="main-layout">
