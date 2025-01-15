@@ -7,7 +7,7 @@ export const floorData = {
         {
           id: 1,
           number: "1501",
-          name: "",
+          name: "Hamar",
           coordinates: [36, -3.8, -0.38],
           dimensions: [2.8, 3.5, 0.2],
           description: 'Some description of the room...'
@@ -23,7 +23,7 @@ export const floorData = {
         {
           id: 3,
           number: "1503a",
-          name: "",
+          name: "Samhandling",
           coordinates: [4.8, 0.6, -0.38],
           dimensions: [4.2, 1.8, 0.2],
           description: ''
@@ -31,7 +31,7 @@ export const floorData = {
         {
           id: 4,
           number: "1503b",
-          name: "",
+          name: "Samhandling",
           coordinates: [4.8, 4, -0.38],
           dimensions: [4.2, 1.8, 0.2],
           description: ''
@@ -39,7 +39,7 @@ export const floorData = {
         {
           id: 5,
           number: "1504",
-          name: "",
+          name: "Aalborg",
           coordinates: [2, -6.8, -0.38],
           dimensions: [4.8, 6, 0.2],
           description: ''
@@ -55,7 +55,7 @@ export const floorData = {
         {
           id: 7,
           number: "1506",
-          name: "",
+          name: "Fredrikstad",
           coordinates: [-9.1, -5.4, -0.38],
           dimensions: [3.4, 3.4, 0.2],
           description: ''
@@ -79,7 +79,7 @@ export const floorData = {
         {
           id: 10,
           number: "1509",
-          name: "",
+          name: "Drøbak",
           coordinates: [-15.2, 2.9, -0.38],
           dimensions: [3.2, 2.8, 0.2],
           description: ''
@@ -95,7 +95,7 @@ export const floorData = {
         {
           id: 12,
           number: "1511",
-          name: "",
+          name: "Stryn",
           coordinates: [-18.5, 2.9, -0.38],
           dimensions: [3.2, 2.8, 0.2],
           description: ''
@@ -135,7 +135,7 @@ export const floorData = {
         {
           id: 17,
           number: "1516",
-          name: "",
+          name: "Moss",
           coordinates: [-15.2, 5.8, -0.38],
           dimensions: [3.2, 2.8, 0.2],
           description: ''
@@ -143,7 +143,7 @@ export const floorData = {
         {
           id: 18,
           number: "1517",
-          name: "",
+          name: "Snertingdal",
           coordinates: [-9.1, 13, -0.38],
           dimensions: [3.4, 4, 0.2],
           description: ''
@@ -151,7 +151,7 @@ export const floorData = {
         {
           id: 19,
           number: "1518",
-          name: "",
+          name: "Molde",
           coordinates: [-9.1, 4.3, -0.38],
           dimensions: [3.4, 3.2, 0.2],
           description: ''
@@ -159,7 +159,7 @@ export const floorData = {
         {
           id: 20,
           number: "1519",
-          name: "",
+          name: "Inderøya",
           coordinates: [1.3, 11.9, -0.38],
           dimensions: [3.4, 6.2, 0.2],
           description: ''
@@ -167,7 +167,7 @@ export const floorData = {
         {
           id: 21,
           number: "1520",
-          name: "",
+          name: "Meråker",
           coordinates: [5.3, 13, -0.38],
           dimensions: [4.4, 4, 0.2],
           description: ''
@@ -205,7 +205,7 @@ export const floorData = {
         {
           id: 3,
           number: "1602",
-          name: "",
+          name: "Kolding",
           coordinates: [6.7, -6.8, -0.38],
           dimensions: [4.4, 6, 0.2],
           description: ''
@@ -213,7 +213,7 @@ export const floorData = {
         {
           id: 4,
           number: "1603a",
-          name: "",
+          name: "Samhandling",
           coordinates: [4.8, 0.6, -0.38],
           dimensions: [4.2, 1.8, 0.2],
           description: ''
@@ -221,7 +221,7 @@ export const floorData = {
         {
           id: 5,
           number: "1603b",
-          name: "",
+          name: "Samhandling",
           coordinates: [4.8, 4, -0.38],
           dimensions: [4.2, 1.8, 0.2],
           description: ''
@@ -229,7 +229,7 @@ export const floorData = {
         {
           id: 6,
           number: "1604",
-          name: "",
+          name: "Bergen",
           coordinates: [2, -6.8, -0.38],
           dimensions: [4.8, 6, 0.2],
           description: ''
@@ -245,7 +245,7 @@ export const floorData = {
         {
           id: 8,
           number: "1606",
-          name: "",
+          name: "Stokke",
           coordinates: [-9.1, -5.4, -0.38],
           dimensions: [3.4, 3.4, 0.2],
           description: ''
@@ -253,7 +253,7 @@ export const floorData = {
         {
           id: 9,
           number: "1607",
-          name: "",
+          name: "Alta",
           coordinates: [-9.1, 1, -0.38],
           dimensions: [3.4, 3.2, 0.2],
           description: ''
@@ -269,7 +269,7 @@ export const floorData = {
         {
           id: 11,
           number: "1609",
-          name: "",
+          name: "Västberga",
           coordinates: [-15.2, 2.9, -0.38],
           dimensions: [3.2, 2.8, 0.2],
           description: ''
@@ -285,7 +285,7 @@ export const floorData = {
         {
           id: 13,
           number: "1611",
-          name: "",
+          name: "København",
           coordinates: [-18.5, 2.9, -0.38],
           dimensions: [3.2, 2.8, 0.2],
           description: ''
@@ -301,7 +301,7 @@ export const floorData = {
         {
           id: 15,
           number: "1613",
-          name: "",
+          name: "Robsrud",
           coordinates: [-27.4, -5.1, -0.38],
           dimensions: [3, 3, 0.2],
           description: ''
@@ -325,7 +325,7 @@ export const floorData = {
         {
           id: 18,
           number: "1616",
-          name: "",
+          name: "Roskilde",
           coordinates: [-15.2, 5.8, -0.38],
           dimensions: [3.2, 2.8, 0.2],
           description: ''
@@ -341,7 +341,7 @@ export const floorData = {
         {
           id: 20,
           number: "1618",
-          name: "",
+          name: "Ystad",
           coordinates: [-9.1, 4.3, -0.38],
           dimensions: [3.4, 3.2, 0.2],
           description: ''
@@ -349,7 +349,7 @@ export const floorData = {
         {
           id: 21,
           number: "1619",
-          name: "",
+          name: "Uppsala",
           coordinates: [1.3, 13, -0.38],
           dimensions: [3.4, 4, 0.2],
           description: ''
@@ -371,7 +371,7 @@ export const floorData = {
         {
           id: 2,
           number: "1702",
-          name: "",
+          name: "Stockholm",
           coordinates: [4.2, -6.7, -0.38],
           dimensions: [9.2, 6.2, 0.2],
           description: ''
@@ -379,7 +379,7 @@ export const floorData = {
         {
           id: 3,
           number: "1703",
-          name: "",
+          name: "Stavanger",
           coordinates: [1.9, 0.96, -0.38],
           dimensions: [4.8, 3.2, 0.2],
           description: ''
@@ -387,7 +387,7 @@ export const floorData = {
         {
           id: 4,
           number: "1704",
-          name: "",
+          name: "Alnabru",
           coordinates: [-3.9, 0.96, -0.38],
           dimensions: [6.55, 3.2, 0.2],
           description: ''
@@ -395,7 +395,7 @@ export const floorData = {
         {
           id: 6,
           number: "1705",
-          name: "",
+          name: "Helsinki",
           coordinates: [-9.1, -7.2, -0.38],
           dimensions: [3.4, 5.2, 0.2],
           description: ''
@@ -411,7 +411,7 @@ export const floorData = {
         {
           id: 8,
           number: "1707",
-          name: "",
+          name: "Longyearbyen",
           coordinates: [-22.3, -0.3, -0.38],
           dimensions: [6, 3, 0.2],
           description: ''
@@ -419,7 +419,7 @@ export const floorData = {
         {
           id: 9,
           number: "1708",
-          name: "",
+          name: "Odense",
           coordinates: [-22.3, 2.8, -0.38],
           dimensions: [6, 3, 0.2],
           description: ''
@@ -451,7 +451,7 @@ export const floorData = {
         {
           id: 13,
           number: "1712",
-          name: "",
+          name: "Oslo",
           coordinates: [-23.83, 5.8, -0.38],
           dimensions: [2.95, 2.8, 0.2],
           description: ''
@@ -467,7 +467,7 @@ export const floorData = {
         {
           id: 15,
           number: "1714",
-          name: "",
+          name: "Lindesnes",
           coordinates: [-9.1, 13, -0.38],
           dimensions: [3.4, 3.9, 0.2],
           description: ''
@@ -483,7 +483,7 @@ export const floorData = {
         {
           id: 17,
           number: "1716",
-          name: "",
+          name: "Steinkjer",
           coordinates: [-5.63, 10.6, -0.38],
           dimensions: [3.35, 3.5, 0.2],
           description: ''
@@ -491,7 +491,7 @@ export const floorData = {
         {
           id: 18,
           number: "1717",
-          name: "",
+          name: "Skien",
           coordinates: [-2.17, 10.6, -0.38],
           dimensions: [3.35, 3.5, 0.2],
           description: ''
@@ -499,7 +499,7 @@ export const floorData = {
         {
           id: 19,
           number: "1718",
-          name: "",
+          name: "Västerås",
           coordinates: [-3.9, 4.28, -0.38],
           dimensions: [6.55, 3.15, 0.2],
           description: ''
@@ -507,7 +507,7 @@ export const floorData = {
         {
           id: 20,
           number: "1719",
-          name: "",
+          name: "Malmö",
           coordinates: [1.9, 4.28, -0.38],
           dimensions: [4.8, 3.15, 0.2],
           description: ''
@@ -515,7 +515,7 @@ export const floorData = {
         {
           id: 21,
           number: "1720",
-          name: "",
+          name: "Göteborg",
           coordinates: [1.3, 11.9, -0.38],
           dimensions: [3.4, 6.1, 0.2],
           description: ''
@@ -523,7 +523,7 @@ export const floorData = {
         {
           id: 22,
           number: "1721",
-          name: "",
+          name: "Örebro",
           coordinates: [5.3, 13, -0.38],
           dimensions: [4.4, 3.9, 0.2],
           description: ''
@@ -545,7 +545,7 @@ export const floorData = {
         {
           id: 1,
           number: "1801",
-          name: "",
+          name: "Bodø",
           coordinates: [36, -3.8, -0.38],
           dimensions: [2.8, 3.5, 0.2],
           description: ''
@@ -553,15 +553,15 @@ export const floorData = {
         {
           id: 2,
           number: "1802",
-          name: "",
+          name: "Drammen",
           coordinates: [6.7, -6.8, -0.38],
           dimensions: [4.4, 6, 0.2],
           description: ''
         },
         {
           id: 3,
-          number: "1803 - Hub",
-          name: "",
+          number: "1803",
+          name: "Hub",
           coordinates: [3.2, 2.65, -0.38],
           dimensions: [8.6, 6.5, 0.2],
           description: ''
@@ -569,7 +569,7 @@ export const floorData = {
         {
           id: 5,
           number: "1804",
-          name: "",
+          name: "Århus",
           coordinates: [2, -6.8, -0.38],
           dimensions: [4.8, 6, 0.2],
           description: ''
@@ -585,7 +585,7 @@ export const floorData = {
         {
           id: 7,
           number: "1806",
-          name: "",
+          name: "Ålesund",
           coordinates: [-9.1, -5.4, -0.38],
           dimensions: [3.4, 3.4, 0.2],
           description: ''
@@ -593,7 +593,7 @@ export const floorData = {
         {
           id: 8,
           number: "1807",
-          name: "",
+          name: "Mo I Rana",
           coordinates: [-9.1, 1, -0.38],
           dimensions: [3.4, 3.2, 0.2],
           description: ''
@@ -609,7 +609,7 @@ export const floorData = {
         {
           id: 10,
           number: "1809",
-          name: "",
+          name: "Myrvåg",
           coordinates: [-16.85, 2.9, -0.38],
           dimensions: [6.5, 2.8, 0.2],
           description: ''
@@ -633,7 +633,7 @@ export const floorData = {
         {
           id: 14,
           number: "1813",
-          name: "",
+          name: "Sortland",
           coordinates: [-27.4, -5.1, -0.38],
           dimensions: [3, 3, 0.2],
           description: ''
@@ -657,7 +657,7 @@ export const floorData = {
         {
           id: 17,
           number: "1816",
-          name: "",
+          name: "Linköping",
           coordinates: [-15.2, 5.8, -0.38],
           dimensions: [3.2, 2.8, 0.2],
           description: ''
@@ -665,7 +665,7 @@ export const floorData = {
         {
           id: 18,
           number: "1817",
-          name: "",
+          name: "Kristiansand",
           coordinates: [-9.1, 13, -0.38],
           dimensions: [3.4, 4, 0.2],
           description: ''
@@ -673,7 +673,7 @@ export const floorData = {
         {
           id: 19,
           number: "1818",
-          name: "",
+          name: "Narvik",
           coordinates: [-9.1, 4.3, -0.38],
           dimensions: [3.4, 3.2, 0.2],
           description: ''
@@ -689,7 +689,7 @@ export const floorData = {
         {
           id: 21,
           number: "1820",
-          name: "",
+          name: "Snåsa",
           coordinates: [5.3, 13, -0.38],
           dimensions: [4.4, 4, 0.2],
           description: ''
@@ -711,7 +711,7 @@ export const floorData = {
         {
           id: 1,
           number: "1901",
-          name: "",
+          name: "Fauske",
           coordinates: [36, -3.8, -0.38],
           dimensions: [2.8, 3.5, 0.2],
           description: ''
@@ -719,7 +719,7 @@ export const floorData = {
         {
           id: 2,
           number: "1902",
-          name: "",
+          name: "Haugesund",
           coordinates: [6.7, -7.9, -0.38],
           dimensions: [4.4, 3.8, 0.2],
           description: ''
@@ -727,7 +727,7 @@ export const floorData = {
         {
           id: 3,
           number: "1903a",
-          name: "",
+          name: "Samhandling",
           coordinates: [4.8, 0.6, -0.38],
           dimensions: [4.2, 1.8, 0.2],
           description: ''
@@ -735,7 +735,7 @@ export const floorData = {
         {
           id: 4,
           number: "1903b",
-          name: "",
+          name: "Samhandling",
           coordinates: [4.8, 4, -0.38],
           dimensions: [4.2, 1.8, 0.2],
           description: ''
@@ -743,7 +743,7 @@ export const floorData = {
         {
           id: 5,
           number: "1904",
-          name: "",
+          name: "Jönköping",
           coordinates: [2, -6.8, -0.38],
           dimensions: [4.8, 6, 0.2],
           description: ''
@@ -759,7 +759,7 @@ export const floorData = {
         {
           id: 7,
           number: "1906",
-          name: "",
+          name: "Otta",
           coordinates: [-9.1, -5.4, -0.38],
           dimensions: [3.4, 3.4, 0.2],
           description: ''
@@ -767,7 +767,7 @@ export const floorData = {
         {
           id: 8,
           number: "1907",
-          name: "",
+          name: "Kongshavn",
           coordinates: [-9.1, 1, -0.38],
           dimensions: [3.4, 3.2, 0.2],
           description: ''
@@ -783,7 +783,7 @@ export const floorData = {
         {
           id: 10,
           number: "1909",
-          name: "",
+          name: "Lom",
           coordinates: [-15.2, 2.9, -0.38],
           dimensions: [3.2, 2.8, 0.2],
           description: ''
@@ -799,7 +799,7 @@ export const floorData = {
         {
           id: 12,
           number: "1911",
-          name: "",
+          name: "Esbjerg",
           coordinates: [-18.5, 2.9, -0.38],
           dimensions: [3.2, 2.8, 0.2],
           description: ''
@@ -815,7 +815,7 @@ export const floorData = {
         {
           id: 14,
           number: "1913",
-          name: "",
+          name: "Brønnøysund",
           coordinates: [-27.4, -5.1, -0.38],
           dimensions: [3, 3, 0.2],
           description: ''
@@ -855,7 +855,7 @@ export const floorData = {
         {
           id: 19,
           number: "1918",
-          name: "",
+          name: "Tromsø",
           coordinates: [-9.1, 4.3, -0.38],
           dimensions: [3.4, 3.2, 0.2],
           description: ''
@@ -863,7 +863,7 @@ export const floorData = {
         {
           id: 20,
           number: "1919",
-          name: "",
+          name: "Harstad",
           coordinates: [1.3, 11.9, -0.38],
           dimensions: [3.4, 6.2, 0.2],
           description: ''

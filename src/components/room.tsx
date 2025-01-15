@@ -5,6 +5,7 @@ import { colors } from "../utils/globals"
 
 const Room: React.FC<RoomProps> = ({
   number,
+  name,
   coordinates,
   dimensions,
   onClick,
@@ -25,9 +26,14 @@ const Room: React.FC<RoomProps> = ({
     <boxGeometry args={dimensions} />
     <meshStandardMaterial color={selected ? colors.selected : colors.default} />
     {/* Add room number */}
-    <Text position={[0, 0, 0.12]} fontSize={0.5} color={'#111111'} scale={1.5}>
+    <Text position={[0, 0.2, 0.12]} fontSize={0.3} color={'#111111'} scale={1.5}>
       {number}
     </Text>
+    {name &&
+      <Text position={[0, -0.3, 0.12]} fontSize={0.2} color={'#111111'} scale={1.5}>
+        {name}
+      </Text>
+    }
   </mesh>
 )
 
