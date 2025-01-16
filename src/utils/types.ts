@@ -4,6 +4,7 @@ export type RoomProps = {
   id: number
   number: string
   name: string
+  seats: number
   coordinates: Vector3
   dimensions: []
   onClick?: () => void

@@ -8,6 +8,7 @@ const Room: React.FC<RoomProps> = ({
   name,
   coordinates,
   dimensions,
+  seats,
   onClick,
   selected,
 }) => (
@@ -26,7 +27,7 @@ const Room: React.FC<RoomProps> = ({
     <meshStandardMaterial color={selected ? colors.selected : colors.default} />
     <boxGeometry args={dimensions} />
     <Text
-      position={[0, 0.2, 0.12]}
+      position={[0, name ? 0.4 : 0, 0.12]}
       fontSize={0.3}
       color={"#111111"}
       scale={1.5}
@@ -37,12 +38,14 @@ const Room: React.FC<RoomProps> = ({
     {name && (
       <Text
         position={[0, number ? -0.3 : 0, 0.12]}
+        textAlign="center"
         fontSize={0.2}
         color={"#111111"}
         scale={1.5}
         raycast={() => null}
       >
-        {name}
+        {name}{'\n'}
+        {seats > 0 && `- ${seats} -`}
       </Text>
     )}
   </mesh>
