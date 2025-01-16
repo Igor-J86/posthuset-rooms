@@ -59,7 +59,7 @@ function App() {
         selectedRoom={selectedRoom}
       />
       <h2>Posthuset rooms</h2>
-      <div className="flex gam">
+      <div className="flex gam phm">
         {floorData.floors.map((floor) => (
           <button key={floor.id} disabled={floor.id === selectedFloor} onClick={() => {
             setSelectedFloor(floor.id)

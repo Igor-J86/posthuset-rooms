@@ -1,9 +1,26 @@
 import { colors } from "../utils/globals"
 import { Text } from "@react-three/drei"
 
-const FloorBase = () => {
+const FloorBase = ({selectedFloor}:{selectedFloor:number}) => {
   // Load texture
   //const texture = useTexture("./19etg-test2.jpg")
+
+  function colorFloor() {
+      switch (selectedFloor) {
+        case 15:
+          return colors.teal
+        case 16:
+          return colors.darkred
+        case 17:
+          return colors.teal
+        case 18:
+          return colors.darkred
+        case 19:
+          return colors.teal
+        default:
+          return colors.darkred
+    }
+  }
 
   return (
     <>
@@ -23,25 +40,25 @@ const FloorBase = () => {
         {/* Plane geometry for the floor */}
         <boxGeometry args={[29, 25, 0.4]} />
         {/* Apply the texture as material */}
-        <meshStandardMaterial color={colors.gray} />
+        <meshStandardMaterial color={colorFloor()} />
       </mesh>
       
       {/* Middle part */}
       <mesh rotation={[0, 0, 0]} position={[-3.9, 2.6, -0.6]}>
         <boxGeometry args={[6.8, 19.8, 0.4]} />
-        <meshStandardMaterial color={colors.gray} />
+        <meshStandardMaterial color={colorFloor()} />
       </mesh>
 
       {/* Right part */}
       <mesh rotation={[0, 0, 0]} position={[14, 2.6, -0.6]}>
         <boxGeometry args={[29, 25, 0.4]} />
-        <meshStandardMaterial color={colors.gray} />
+        <meshStandardMaterial color={colorFloor()} />
       </mesh>
 
       {/* Right part extended */}
       <mesh rotation={[0, 0, 0]} position={[33, 2.6, -0.6]}>
         <boxGeometry args={[9, 16.5, 0.4]} />
-        <meshStandardMaterial color={colors.gray} />
+        <meshStandardMaterial color={colorFloor()} />
       </mesh>
     </>
   )

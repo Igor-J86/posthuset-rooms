@@ -30,7 +30,7 @@ const FloorPlan = ({
         target={[0,1,0]}
         enablePan
       />
-      <FloorBase />
+      <FloorBase selectedFloor={selectedFloor} />
       {floorPlan.floors.map(
         (floor: Floor) =>
           floor.id === selectedFloor && (
