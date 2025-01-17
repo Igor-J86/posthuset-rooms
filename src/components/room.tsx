@@ -24,7 +24,7 @@ const Room: React.FC<RoomProps> = ({
       e.object.material.color.set(selected ? colors.selected : colors.default)
     }
   >
-    <meshStandardMaterial color={selected ? colors.selected : colors.default} />
+    <meshStandardMaterial color={selected ? colors.selected : colors.default} opacity={number ? 1 : 0.7} transparent={number ? false : true} />
     <boxGeometry args={dimensions} />
     <Text
       position={[0, name ? 0.4 : 0, 0.12]}
