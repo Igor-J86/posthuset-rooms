@@ -16,7 +16,7 @@ export const floorData = {
         {
           id: 2,
           number: "1502",
-          name: "",
+          name: "OBS",
           seats: 0,
           coordinates: [6.7, -6.8, -0.38],
           dimensions: [4.4, 6, 0.2],
@@ -49,15 +49,15 @@ export const floorData = {
           dimensions: [4.8, 6, 0.2],
           description: ''
         },
-        {
-          id: 6,
-          number: "1505",
-          name: "",
-          seats: 6,
-          coordinates: [-9.1, -8.5, -0.38],
-          dimensions: [3.4, 2.6, 0.2],
-          description: ''
-        },
+        // {
+        //   id: 6,
+        //   number: "1505",
+        //   name: "",
+        //   seats: 6,
+        //   coordinates: [-9.1, -8.5, -0.38],
+        //   dimensions: [3.4, 2.6, 0.2],
+        //   description: ''
+        // },
         {
           id: 7,
           number: "1506",
@@ -97,7 +97,7 @@ export const floorData = {
         {
           id: 11,
           number: "1510",
-          name: "",
+          name: "Multirom",
           seats: 0,
           coordinates: [-18.5, -0.2, -0.38],
           dimensions: [3.2, 3.2, 0.2],
@@ -124,7 +124,7 @@ export const floorData = {
         {
           id: 14,
           number: "1513",
-          name: "",
+          name: "Multirom",
           seats: 0,
           coordinates: [-27.4, -5.1, -0.38],
           dimensions: [3, 3, 0.2],
@@ -142,7 +142,7 @@ export const floorData = {
         {
           id: 16,
           number: "1515",
-          name: "",
+          name: "Multirom",
           seats: 0,
           coordinates: [-18.5, 5.8, -0.38],
           dimensions: [3.2, 2.8, 0.2],
@@ -196,8 +196,8 @@ export const floorData = {
         {
           id: 22,
           number: "1521",
-          name: "",
-          seats: 0,
+          name: "Stillerom",
+          seats: 8,
           coordinates: [33, 9, -0.38],
           dimensions: [8.8, 3.4, 0.2],
           description: ''
