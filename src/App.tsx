@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react"
 import { floorData } from "./utils/globals"
 import FloorPlan from "./components/floorPlan"
-import type { FloorPlanType } from "./utils/types"
+import type { FloorPlanType, RoomProps } from "./utils/types"
 import RoomDetails from "./components/roomDetails"
 import { loadLocal, saveLocal, setQueryParam } from "./utils/helpers"
 
@@ -23,16 +23,16 @@ function App() {
     }
   }
 
-  const roomDescription = () => {
+  const getRoomDetails = () => {
     const getFloor = floorData.floors.filter(
       (floor) => floor.id === selectedFloor
     )
     if (!getFloor[0]) return ""
-    const roomDescription = getFloor[0].rooms.filter(
+    const room = getFloor[0].rooms.filter(
       (room) => room.number === selectedRoom
     )
-    if (!roomDescription[0]) return ""
-    return roomDescription[0].description
+    if (!room[0]) return ""
+    return room[0]
   }
 
   useEffect(() => {
@@ -95,7 +95,7 @@ function App() {
           <button onClick={(e) => copyRoomUrl(e)}>
             Copy
           </button>
-          <RoomDetails room={roomDescription()} />
+          <RoomDetails room={getRoomDetails() as RoomProps} />
         </>
       }
     </div>

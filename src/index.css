@@ -84,6 +84,9 @@ img {
   height: 100%;
 }
 
+.mtm {
+  margin-top: 1.5rem;
+}
 
 .flex {
   display: flex;
@@ -91,6 +94,10 @@ img {
 
 .flex-dir-col {
   flex-direction: column;
+}
+
+.align-ic {
+  align-items: center;
 }
 
 .gam {
