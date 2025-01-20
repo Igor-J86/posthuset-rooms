@@ -26,6 +26,11 @@ body {
   height: 100%;
 }
 
+h1 {
+  font-weight: 400;
+  font-size: 2rem;
+}
+
 a {
   font-weight: 500;
   color: #646cff;

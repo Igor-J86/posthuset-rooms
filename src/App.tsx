@@ -47,6 +47,15 @@ function App() {
     }
   },[searchTerm])
 
+  const copyRoomUrl = (e:React.MouseEvent<HTMLButtonElement>) => {
+    const btn = e.currentTarget
+    navigator.clipboard.writeText(window.location.href)
+    btn.innerText = "Copied"
+    setTimeout(() => {
+      btn.innerText = "Copy"
+    },2000)
+  }
+
   return (
     <div className="main-layout">
       <FloorPlan
@@ -58,7 +67,7 @@ function App() {
         selectedFloor={selectedFloor}
         selectedRoom={selectedRoom}
       />
-      <h2>Posthuset rooms</h2>
+      <h1>Posthuset rooms</h1>
       <div className="flex gam phm">
         {floorData.floors.map((floor) => (
           <button key={floor.id} disabled={floor.id === selectedFloor} onClick={() => {
@@ -81,7 +90,14 @@ function App() {
           autoFocus
         />
       </div>
-      {selectedRoom && <RoomDetails room={roomDescription()} />}
+      {selectedRoom &&
+        <>
+          <button onClick={(e) => copyRoomUrl(e)}>
+            Copy
+          </button>
+          <RoomDetails room={roomDescription()} />
+        </>
+      }
     </div>
   )
 }

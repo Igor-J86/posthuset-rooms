@@ -34,6 +34,16 @@ const FloorBase = ({selectedFloor}:{selectedFloor:number}) => {
           Plaza Hotel ⬆️ 
         </Text>
       </mesh>
+      <mesh rotation={[0, 0, 0]} position={[16.8, -1.5, -0.6]}>
+        <Text position={[0, 0, 0.26]} fontSize={0.6} color={"#aaaaaa"} scale={1.5}>
+          🚻
+        </Text>
+      </mesh>
+      <mesh rotation={[0, 0, 0]} position={[32.5, 2.5, -0.6]}>
+        <Text position={[0, 0, 0.26]} fontSize={0.6} color={"#aaaaaa"} scale={1.5}>
+          🛗
+        </Text>
+      </mesh>
 
       {/* Left part */}
       <mesh rotation={[0, 0, 0]} position={[-21.8, 2.6, -0.6]}>
