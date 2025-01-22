@@ -8,11 +8,11 @@ const FloorBase = ({selectedFloor}:{selectedFloor:number}) => {
   function colorFloor() {
       switch (selectedFloor) {
         case 15:
-          return colors.teal
-        case 16:
           return colors.darkred
-        case 17:
+        case 16:
           return colors.teal
+        case 17:
+          return colors.darkred
         case 18:
           return colors.darkred
         case 19:
