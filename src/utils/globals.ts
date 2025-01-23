@@ -796,22 +796,22 @@ export const floorData = {
           dimensions: [3.4, 3.2, 0.2],
           description: ''
         },
-        {
-          id: 20,
-          number: "1819",
-          name: "",
-          seats: 0,
-          coordinates: [1.3, 11.9, -0.38],
-          dimensions: [3.4, 6.2, 0.2],
-          description: ''
-        },
+        // {
+        //   id: 20,
+        //   number: "1819",
+        //   name: "",
+        //   seats: 0,
+        //   coordinates: [1.3, 11.9, -0.38],
+        //   dimensions: [3.4, 6.2, 0.2],
+        //   description: ''
+        // },
         {
           id: 21,
           number: "1820",
           name: "Snåsa",
           seats: 6,
-          coordinates: [5.3, 13, -0.38],
-          dimensions: [4.4, 4, 0.2],
+          coordinates: [1.3, 13, -0.38],
+          dimensions: [3.4, 4, 0.2],
           description: ''
         },
         {
