@@ -82,21 +82,23 @@ function App() {
         <label className="form__label" htmlFor="roomInput">
           Find room
         </label>
-        <input
-          className="form__control maxw20r mb0"
-          onInput={(e) => handleRoomInput(e)}
-          id="roomInput"
-          value={selectedRoom && selectedRoom}
-          autoFocus
-        />
+        <div className="flex gam">
+          <input
+            className="form__control maxw20r mb0"
+            onInput={(e) => handleRoomInput(e)}
+            id="roomInput"
+            value={selectedRoom && selectedRoom}
+            autoFocus
+          />
+          {selectedRoom &&
+            <button onClick={(e) => copyRoomUrl(e)}>
+              Copy
+            </button>
+          }
+        </div>
       </div>
       {selectedRoom &&
-        <>
-          <button onClick={(e) => copyRoomUrl(e)}>
-            Copy
-          </button>
-          <RoomDetails room={getRoomDetails() as RoomProps} />
-        </>
+        <RoomDetails room={getRoomDetails() as RoomProps} />
       }
     </div>
   )

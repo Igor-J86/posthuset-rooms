@@ -931,8 +931,8 @@ export const floorData = {
         {
           id: 11,
           number: "1910",
-          name: "",
-          seats: 0,
+          name: "Brønnøysund",
+          seats: 4,
           coordinates: [-18.5, -0.2, -0.38],
           dimensions: [3.2, 3.2, 0.2],
           description: ''
@@ -958,8 +958,8 @@ export const floorData = {
         {
           id: 14,
           number: "1913",
-          name: "Brønnøysund",
-          seats: 4,
+          name: "",
+          seats: 0,
           coordinates: [-27.4, -5.1, -0.38],
           dimensions: [3, 3, 0.2],
           description: ''
@@ -976,8 +976,8 @@ export const floorData = {
         {
           id: 16,
           number: "1915",
-          name: "",
-          seats: 0,
+          name: "Multirom",
+          seats: 2,
           coordinates: [-18.5, 5.8, -0.38],
           dimensions: [3.2, 2.8, 0.2],
           description: ''
